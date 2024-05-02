@@ -5,7 +5,7 @@ export class Task {
     this.id = Math.random().toString(16).slice(2);
     this.name = name;
     this.count = count;
-}
+  }
 
   setName(value) {
     this.name = value;
@@ -16,10 +16,11 @@ export class Task {
   }
 };
 
-const task = new Task ('Отвезти кошку на стрижку');
-task.counter();
-console.log(task);
 
-task.setName('Подготовить документы в ИФНС');
-task.counter();
-console.log(task);
+// task.setName('Подготовить документы в ИФНС', 2);
+// task.counter();
+
+const task1 = new Task('Подготовить документы в ИФНС');
+console.log(task1);
+const task2 = new Task('Посмотреть лекцию №5');
+console.log(task2);
